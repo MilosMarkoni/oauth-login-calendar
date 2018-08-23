@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Oauth app</title>
+        <style>
+                body {
+                    margin: 0;
+                    font-family: monospace;
+                }
+               nav {
+                   background: #4d5057;
+                   height: 80px;
+               }
+               nav ul {
+                   list-style-type: none;
+                   padding: 20px;
+                   box-sizing: border-box;
+                    margin: 0;
+                    height: 100%;
+               }
+               nav li {
+                   background: #246EB9;
+                   text-decoration: none;
+                   display: inline-block;
+                   box-sizing: border-box;
+                   vertical-align: middle;
+               }
+               nav li a {
+                   color: white;
+                   padding: 10px;
+                   display: block;
+                   text-decoration: none;
+               }
+               header, main {
+                   margin: 20px;
+                   text-align: center;
+               }
+            </style>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/auth/logout">Logout</a></li>
+                <li><a href="/profile">Calendar</a></li>
+            </ul>
+        </nav>
+        <header>
+            <h1>Welcome to your profile, <%= user.username %>. </h1>
+        </header>
+        <main>
+            <p>Click on the calendar button to see your events.</p>
+        </main>
+    </body>
+</html>
